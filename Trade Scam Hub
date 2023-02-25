@@ -1,14 +1,20 @@
 local Library = loadstring(game:HttpGet("https://raw.githubusercontent.com/xHeptc/Kavo-UI-Library/main/source.lua"))()
-local Window = Library.CreateLib("Trade Scam Hub", "BloodTheme")
+local Window = Library.CreateLib("Trade Scam Hub | V2.2", "DarkTheme")
 
 --MAIN
-local Main = Window:NewTab("Trade Scam")
-local MainSection = Main:NewSection("Main")
+local Main = Window:NewTab("Main")
+local MainSection = Main:NewSection("Trade Scam")
 
 
-MainSection:NewButton("Trade Scam", "Toggle On And Off In Trade Then Take Pets Out.", function()
+MainSection:NewButton("Visual Scam", "Press Once In Trade Then Take Pets Out.", function()
     loadstring(game:HttpGet("https://raw.githubusercontent.com/PsxDupeOp/DupeMethodOp/main/DupeMethodLeaked.lua"))()
 end)
+ 
+
+--DUPE
+local Main = Window:NewTab("Dupe")
+local MainSection = Main:NewSection("Main")
+
 
 MainSection:NewToggle("Dupe Method", "Toggle On Then Withdraw Huges From Bank", function(state)
     if state then
@@ -17,7 +23,6 @@ MainSection:NewToggle("Dupe Method", "Toggle On Then Withdraw Huges From Bank", 
 
     end
 end)
-
 --ADMIN
 local Main = Window:NewTab("Admin")
 local MainSection = Main:NewSection("Admin")
